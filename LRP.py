@@ -150,3 +150,8 @@ for i in range(len(yi)):
         print("test output : ",i)
 for i, method_name in enumerate(sorted(attributions.keys())):
     plt.show(plot(attributions[method_name].reshape(28,28), xi = xi.reshape(28, 28), axis=axes[1+i]).set_title(method_name))
+    
+    
+    
+    
+   
