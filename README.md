@@ -8,6 +8,8 @@ Layer-wise Relevance Propagation (LRP) is a method that identifies important pix
 
 # References
 
+W Samek, A Binder, G Montavon, S Bach, KR Müller. Evaluating the Visualization of What a Deep Neural Network has Learned
+
 S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R. Müller, W. Samek. On Pixel-wise Explanations for Non-Linear Classifier Decisions by Layer-wise Relevance Propagation PLOS ONE, 2015
 
 https://idalab.de/blog/idalab-seminar/montavon
