@@ -18,7 +18,6 @@ mnist = input_data.read_data_sets(tmp_dir, one_hot=True)
 
 
 
-
 # Parameters
 learning_rate = 0.005
 num_steps = 2000
@@ -47,7 +46,6 @@ biases = {
 }
 
 print("DONE")
-
 
 
 # Create and train model
@@ -108,7 +106,6 @@ print("Test accuracy:", \
 print("DONE")
 
 
-
 # Import DeepExplain
 from methods import DeepExplain
 from utils import plot, plt
@@ -146,6 +143,3 @@ for i, method_name in enumerate(sorted(attributions.keys())):
     plt.show(plot(attributions[method_name].reshape(28,28), xi = xi.reshape(28, 28), axis=axes[1+i]).set_title(method_name))
     
     
-    
-    
-   
