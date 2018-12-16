@@ -128,15 +128,9 @@ with DeepExplain(session=sess) as de:
     logits = model(X)
     # We run `explain()` several time to compare different attribution methods
     attributions = {
-        # Gradient-based
-        #'Saliency maps':        de.explain('saliency', logits * yi, X, xi),
-#         'Gradient * Input':     de.explain('grad*input', logits * yi, X, xi),
-#         'Integrated Gradients': de.explain('intgrad', logits * yi, X, xi),
+       
         'Epsilon-LRP':          de.explain('elrp', logits * yi, X, xi)
-        #'DeepLIFT (Rescale)':   de.explain('deeplift', logits * yi, X, xi),
-        #Perturbation-based
-        #'_Occlusion [1x1]':      de.explain('occlusion', logits * yi, X, xi),
-        #'_Occlusion [3x3]':      de.explain('occlusion', logits * yi, X, xi, window_shape=(3,))
+
     }
     print ('Done')
 
