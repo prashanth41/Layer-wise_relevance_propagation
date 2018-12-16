@@ -1,5 +1,5 @@
 # Layer-wise relevance propagation
 
-Layer-wise relevance propagation is a method to to determine or to understand what pixels in an input image contribute most strongly to the output of neural network.
+Layer-wise Relevance Propagation (LRP) is a method that identifies important pixels by running a backward pass in the neural network. The backward pass is a conservative relevance redistribution procedure, where neurons that contribute the most to the higher-layer receive most relevance from it. 
 
 
